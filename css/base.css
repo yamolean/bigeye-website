@@ -1,0 +1,651 @@
+@charset "UTF-8";
+
+/* ---------------------
+ * FONTSIZE MODEL * 
+ * ---------------------
+ *  63% ->	10pxに相当
+ *  70% ->	11pxに相当
+ *  75% ->	12pxに相当
+ *  82% ->	13pxに相当
+ *  88% ->	14pxに相当
+ *  94% ->	15pxに相当
+ * 100% ->	16pxに相当
+ * 107% ->	17pxに相当
+ * 113% ->	18pxに相当
+ * 119% ->	19pxに相当
+ * 125% ->	20pxに相当
+ * --------------------- */
+
+
+/* ========BASIC======== */
+* {
+   font-family:"Hiragino Kaku Gothic Pro",HiraKakuPro-W3, "メイリオ", "ＭＳ Ｐゴシック", Osaka,verdana,sans-serif, "ヒラギノ角ゴ Pro W3";
+   color:#333;
+   font-size:15px;
+}
+
+body {
+   margin:0;
+   padding-top:0;
+   letter-spacing:0px;
+   background:#fff url("images/bg_body.gif") 0 0 repeat-x;
+
+}
+
+br {
+   letter-spacing:normal;
+}
+
+a {
+   color:#07642a;
+   text-decoration:none;
+}
+
+a:hover {
+   color:#666;
+}
+
+img {
+   border:0;
+
+}
+#img {
+	margin-top:10px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin:0;
+}
+
+.fontcolor {
+	color: #C7071B;
+	font-weight:bold;
+}
+.font1{
+	font-size:15px;
+	color:#393;
+	font-weight:bold;
+
+}
+.font2{
+	font-size:15px;
+	color:#C00;
+	font-weight:bold;
+}
+.font3{
+	font-size:15px;
+	color:#060;
+	background:#CFC;
+	font-weight:bold;
+}
+/* ========TEMPLATE LAYOUT======== */
+div#headWrap {
+   position:relative;
+   width:900px;
+   margin:0 auto;
+   padding: 0;
+   background:#fff;
+   height:100px;
+}
+#container {
+	width: 900px; 
+	heigh:100%;
+	background: url(../images/back.jpg);
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	padding: 0px;
+	border: 0;
+	text-align: left; 
+	margin-bottom:0px;
+}
+
+div#header {
+   position:relative;
+   width:900px;
+   margin:0 auto;
+   background:#fff;
+   background-image:url(../images/header_bg.jpg);
+   height:100px;
+}
+
+div#pr {
+   position:absolute;
+   left:0;
+   top:0;
+   width:900px;
+}
+
+div#gnavi {
+   position:absolute;
+   bottom:0;
+   right:0;
+}
+
+/* MENU */
+#menu{
+  width: 900px;
+  height: 50px;
+  margin: 5px 0;
+  padding: 0px;
+  	position:relative;
+}
+#menuimg{
+    clear: both;
+	text-align:center;
+	margin-top:20px;
+
+}
+
+
+div#icatch {
+   width:900px;
+   height:380px;
+   margin:5px auto;
+   background:#fff;
+   padding-top:5px;
+   
+}
+
+div#contents {
+   width:900px;
+   margin:0 auto;
+   padding:0px 0 ;
+   background:#fff;
+
+border-left-color:#005b49;
+border-right-color:#005b49;
+ border:1px;
+}
+
+div#main {
+   float:right;
+   width:650px;
+}
+
+div#main2 {
+   float:right;
+   width:650px;
+}
+div#sub {
+   float:left;
+   width:230px;
+   height:440px;
+   background:url(../images/sidemenu_b.jpg);
+
+}
+
+div#totop {
+   clear:both;
+}
+
+#footer {
+
+  clear: both;
+  height: 100px;
+  margin:0 auto;
+  padding: 8px 0px 0px 0px;
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  background-image: url('../images/footer_bgd01.gif');
+  line-height:20px;
+}
+
+#footer a{
+
+  font-size: 11px;
+  color:#C00;
+  line-height:16px;
+
+}
+/* ========TOTOP CUSTOMIZE========= */
+div#totop {
+   margin:0 10px;
+   text-align:right;
+   font-size:70%;/* 11px相当 */
+}
+
+div#totop a {
+   padding-left:8px;
+   background: url("images/bg_totop.gif") 0 50% no-repeat;
+}
+
+
+/* ========HEADER CUSTOMIZE======== */
+#h1header{
+font-weight: normal;
+font-size:11px;
+color: #999999;
+margin:0;
+width: 900px;
+padding-left:10px;
+
+}
+
+
+div#header #pr p {
+   margin:0;
+   font-size:18px;/* 12px相当 */
+}
+
+div#header #gnavi ul {
+   list-style:none;
+
+}
+div#header #gnavi li {
+   float:left;
+   font-size:70%;/* 11px相当 */
+   margin-left:15px;
+}
+
+div#header #gnavi li a {
+   display:block;
+   padding-left:15px;
+   background:url("images/bg_gnavi.gif") 0 1px no-repeat;
+}
+
+.table{
+	width:500px;
+	height:200px;
+	color:#000000;
+	text-align:left;
+	font-size: 13px;
+    line-height:160%;
+	margin-left: 10px;
+    border: 1px solid #CCCCCC;
+	line-height:160%;
+	padding-left: 15px;
+	padding-right:15px;
+	overflow:auto;
+	float:left;
+
+}
+/* ========MENU CUSTOMIZE======== */
+
+
+/* ========MAIN CONTENTS CUSTOMIZE======== */
+div#main a {
+   color:#9B0000;
+}
+
+div#main a:hover {
+   color:#9B0000;
+   border-bottom:1px solid #9B0000;
+}
+
+div#main h2 {
+   margin-bottom:10px;
+   margin-top:20px;
+   padding:0 0 0  55px;
+   color:#5A5132;
+   font-size:19px;/* 15px相当 */
+   font-weight:bold;
+   line-height:37px;
+   background:url("../images/title_bg.jpg") 0 0 no-repeat;
+}
+
+div#main h3 {
+   margin-bottom:3px;
+   font-size:88%;/* 14px相当 */
+}
+
+div#main h4 {
+   margin-bottom:2px;
+   font-size:75%;/* 12px相当 */
+}
+
+div#main h5 {
+   margin-bottom:2px;
+   font-size:75%;/* 12px相当 */
+}
+
+div#main h6 {
+   margin-bottom:2px;
+   font-size:75%;/* 12px相当 */
+}
+
+div#main p {
+   margin:0 0 1em 0;
+   font-size:75%;/* 12px相当 */
+}
+
+div#main ul,ol,dl {
+   font-size:15px;/* 12px相当 */
+}
+
+div#main dt {
+   margin-bottom:3px;
+}
+
+div#main dd {
+   margin-top:0px;
+   padding:12px;
+   background:#f1f1f1;
+   font-size:15px;
+   line-height:140%;
+
+
+}
+div#main dd a{
+	font-size:18px;
+}
+
+/* INFORMATION CUSTOMIZE */
+* html body div#main dl.information dd div {
+   display:inline-block;
+}
+
+div#main dl.information dt {
+   float:left;
+   width:10em;
+   margin:0;
+   padding:0;
+   color:#00C;
+   font-weight:bold;
+}
+
+div#main dl.information dd {
+   margin:0 0 0.5em 10em;
+   padding:0;
+   background:transparent;
+}
+
+/* ========SUBCONTENTS CUSTOMIZE======== */
+div#sub .section {
+   margin-bottom:10px;
+}
+
+div#sub h2 {
+   padding:3px;
+   font-size:88%;/* 14px相当 */
+   font-weight:bold;
+   color:#fff;
+   padding-left:10px;
+   background:#9B0000;
+   border-bottom:1px solid #C1C1C1;
+   border-right:1px solid #C1C1C1;
+}
+
+div#sub ul {
+   margin:5px 0 0 5px;
+   padding:0;
+}
+
+div#sub li {
+   padding:5px 0 5px 0;
+   font-size:75%;/* 12px相当 */
+   line-height:1.4;
+   list-style:none;
+   background:url("images/bg_dotline.gif") 0 100% repeat-x;
+}
+
+div#sub li a {
+   display:block;
+   padding-left:12px;
+   background:url("images/bg_list.gif") 0 6px no-repeat;
+}
+
+
+/* ========TOTOP CUSTOMIZE========= */
+div#totop {
+   margin:0 10px;
+   text-align:right;
+   font-size:70%;/* 11px相当 */
+}
+
+div#totop a {
+   padding-left:8px;
+   background: url("images/bg_totop.gif") 0 50% no-repeat;
+}
+
+
+/* ========FOOTMENU CUSTOMIZE======== */
+div#footMenu ul {
+   margin:0;
+   padding:10px 0 0 0;
+   text-align:right;
+}
+
+div#footMenu li {
+   display:inline;
+   margin:0 0 0 10px;
+   font-size:75%;/* 12px相当 */
+   list-style:none;
+}
+
+div#footMenu li a {
+   padding-left:10px;
+   background: url("images/bg_footmenu.gif") 0 50% no-repeat;
+}
+
+
+
+
+/* ========FOOTER CUSTOMIZE======== */
+/* フッター部分
+---------------------------------------------*/
+table.footer {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background-image: url('../images/footer_bgd01.gif');
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	color: #666666;
+	line-height: 120%;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+table.footer a{
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	color: #ff0000;
+	line-height: 120%;
+}
+table.footer a:hover{
+	text-decoration: underline;
+	color: #ff0000;
+}
+td.blank {
+	height: 20px;
+}
+
+/* パンくず部分
+---------------------------------------------*/
+div#pankuzu {
+	position: relative;
+	width: 500px;
+	height: 20px;
+	float: left;
+	padding-left: 10px;
+	font-size:11px;
+	
+
+}
+div#pankuzu a{
+		text-decoration: none;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	color: #ff0000;
+}
+
+#sidemenu{
+  width: 216px;
+  height: 80px;
+  margin: 5px 0;
+  padding: 0px;
+  	position:relative;
+}
+
+
+/*--診療の案内--*/
+#guide{
+
+padding: 5px 0;
+
+margin:10px 0;
+}
+#guide2{
+
+padding: 5px 0;
+
+margin:10px 0;
+}
+
+#guide table{
+width: 580px;
+margin: 5px 0;
+background: #fff;
+font-size: 18px;
+margin-left: 15px;
+border-top: 1px #0fa17c solid;
+border-left: 1px #0fa17c solid;
+text-align: center;
+
+}
+#guide table th{
+width: 25%;
+font-weight: bold;
+border-right: 1px #0fa17c solid;
+padding: 1em 0;
+border-bottom: 1px #0fa17c solid;
+font-size: 14px;
+}
+#guide table td{
+border-right: 1px #0fa17c solid;
+border-bottom: 1px #0fa17c solid;
+font-size: 16px;
+font-weight: bold;
+width:50px;
+}
+#guide table .tb_head{
+background: url(../images/table_bg.jpg) center;
+font-size: 18px;
+}
+#guide table .tb_head th{
+padding: 0.5em 0;
+}
+#guide div{
+width: 300px;
+float: left;
+}
+#guide p{
+width: 300px;
+float: left;
+line-height: 1.2;
+text-align: center;
+margin-top: 20px;
+}
+#guide p img{
+margin: 15px 0;
+}
+#guide div ul{
+padding-left: 0px;
+margin-left: 12px;
+}
+#guide div ul span{
+padding-left: 1em;
+}
+#guide div dl{
+padding-top: 12px;
+margin: 12px 12px 0 12px;
+background: url(../images/dotted.jpg) top left repeat-x;
+}
+#guide div dt{
+width: 100%;
+padding-bottom: 0.3em;
+}
+#guide div dd{
+display: inline;
+}
+#rest dd{
+padding-right: 2.2em;
+}
+#subject dd{
+display: inline;
+padding-right: 1.5em;
+}
+/*--診療の案内ここまで--*/
+
+/*--診療案内ここから--*/
+#photo_table1{
+	width:640px;
+	height:150px;
+	margin-top:20px;
+	background:url(../images/photo_1.jpg) no-repeat;
+	padding-left:10px;
+	padding-top:110px;
+}
+	
+#photo_table2{
+	width:640px;
+	height:120px;
+	margin-top:20px;
+	background:url(../images/photo_2.jpg) no-repeat;
+	padding-left:10px;
+	padding-top:110px;
+}
+
+#photo_table3{
+	width:310px;
+	height:170px;
+	margin-top:5px;
+	background:url(../images/photo_3.jpg) no-repeat;
+	padding-left:330px;
+	padding-top:10px;
+}	
+
+#photo_table4{
+	width:310px;
+	height:200px;
+	margin-top:10px;
+	background:url(../images/photo_4.jpg) no-repeat;
+	padding-left:330px;
+	padding-top:10px;
+}	
+#photo_table5{
+	width:630px;
+	height:150px;
+	margin-top:20px;
+	background:url(../images/photo_5.jpg) no-repeat;
+	padding-left:10px;
+	padding-top:110px;
+}	
+#photo_table6{
+	width:630px;
+	height:120px;
+	margin-top:20px;
+	background:url(../images/photo_6.jpg) no-repeat;
+	padding-left:10px;
+	padding-top:110px;
+}	
+#photo_table7{
+	width:310px;
+	height:180px;
+	margin-top:5px;
+	background:url(../images/photo_7.jpg) no-repeat;
+	padding-left:330px;
+	padding-top:5px;
+}
+#photo_table8{
+	width:310px;
+	height:200px;
+	margin-top:5px;
+	background:url(../images/photo_8.jpg) no-repeat;
+	padding-left:330px;
+	padding-top:3px;
+}
+#photo_table9{
+	width:630px;
+	height:120px;
+	margin-top:20px;
+	background:url(../images/photo_9.jpg) no-repeat;
+	padding-left:10px;
+	padding-top:110px;
+}
+/*--診療案内ここまで--*/	
